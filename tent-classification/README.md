@@ -32,16 +32,15 @@ tent-classification/
                       3,4번쨰:저장된 모델을 사용해 이미지를 넣어 잘 맞추는지 테스트 하는 코드입니다 
 
 -efficientnet2.ipynb: 테스트 페이지 이며 신경쓰지 않으셔도 됩니다                      
-### 2. `tent_model.h5와 tent_model_product.h5`
+### 2. `efficientnet_tent_model.pth'와 'efficientnet_tent_model2.pth`
 -efficientnet_tent_model.pth: 가장 기본 코드의 학습된 모델 가중치 파일.
 -efficientnet_tent_model2.pth: 프로덕션 환경에서 사용할 최종 모델 가중치 파일, 리콜을 통해 계산한 상위 6개의 클래스를 사용하였으며, 최대 82%의 정확도가 나옴
--efficientnet_tent_model3.pth:가장 기본 코드의 최종 학습된 모델 가중치 파일, 11개의 클래스의 824개 데이터를 전부 사용하였으며, 최대 정확도가 70%이상 나옴
 ## 설치 및 실행 방법
 
 
 
 ## 결과물
-- 학습된 모델 파일: -efficientnet_tent_model.pth,efficientnet_tent_model2(main).pth,efficientnet_tent_model3(test).pth
+- 학습된 모델 파일: -efficientnet_tent_model.pth,efficientnet_tent_model2(main).pth
 
 ## 참고 사항
 -데이터셋은 프로젝트 디렉토리에 포함되지 않으며, 별도로 준비해야 합니다.
