@@ -9,17 +9,14 @@ tent-classification는 현재 텐트를 5개 브랜드 29개 텐트로 분류하
 ## 디렉토리 구조
 ```
 tent-classification/
-├── models                  # 모델 관련 파일 저장
-│   ├── tent_model.h5       # 학습된 모델 가중치 파일
-│   ├── tent_model_product.h5  # 프로덕션용 최종 모델 가중치 파일
-│   ├── model_utils.py      # 모델 로드/저장 관련 유틸리티 스크립트
-├── scripts                 # 데이터 처리 및 모델 학습 스크립트
-│   ├── preprocess          # 데이터 전처리 관련 스크립트
-│   │   ├── tent.py         # 데이터셋 폴더 구조 생성 스크립트
-│   │   ├── tent2.py        # 폴더 생성 대안 스크립트
-│   ├── train               # 모델 학습 관련 스크립트
-│   │   ├── efficientnet.ipynb  # EfficientNet 기반 모델 학습 노트북
-│   │   ├── efficientnet2.ipynb # EfficientNet 추가 실험 노트북
+├── models                             # 모델 관련 파일 저장
+│   ├── efficient_tent_model.pth       # 11개 상품명 분류 모델 가중치 파일
+│   ├── efficient_tent_model2.pth      # 6개 상품명 분류 모델 가중치 파일(정확도 80프로 달성!)
+│── notebooks                          # 모델 학습 관련 스크립트
+│   │   ├── efficientnet.ipynb         # for문을 사용한 드롭아웃별 검증정확도 코드
+│   │   ├── efficientnet2.ipynb        # 메인 핵심 코드EfficientNet 6개,11개 텐트 분류 코드
+│   │   ├── efficientnet3.ipynb        # 코드 테스트 페이지(중요X)
+│── qwertqwer.py                       #가중치 확인,GPU사용 여부, 라이브러리 작동 여부 등 테스트 페이지(중요X)
 ├── README.md               # 프로젝트 설명 및 설정 방법
 ```
 
