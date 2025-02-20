@@ -1,4 +1,4 @@
-#클래스 별로 7:2:1로 균등하게 분배하지는 않음, 일부 클래스 데이터가 너무 적으면 특정 분할에서 해당 클래스가 사라질수도 있음
+#클래스별로 분배 잘됨, 모델이름 model
 import os
 import torch
 import torch.nn as nn
