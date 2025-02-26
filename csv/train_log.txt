@@ -1,0 +1,2 @@
+Epoch,Train Loss,Train Acc,Val Loss,Val Acc,Learning Rate
+1,2.1154,51.7046,1.1492,72.7740,0.000100
